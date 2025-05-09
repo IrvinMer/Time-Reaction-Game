@@ -21,6 +21,8 @@ What did you do in your project?
 | Component 1     | Description 1         | X        |
 | Component 2     | Description 2         | X        |
 | ...             | ...                   | ...      |
+| ...             | ...                   | ...      |
+| ...             | ...                   | ...      |
 
 ## Table of Pinout Used
 
