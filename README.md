@@ -1,4 +1,4 @@
-#Time Reaction Game
+# Time Reaction Game
 ## Features
 
 <p>- Feature 1
