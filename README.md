@@ -1,21 +1,31 @@
-# Time Reaction Game
-## Features
+# Final Project Report
 
-<p>- Feature 1
-- Feature 2
-- Feature 3</p>
+## Introduction
+What did you do in your project?
 
-## Contributing
+## Results and Video Demonstration Links
+- [Link to Results]
+- [Link to Video Demonstration]
 
-<p>1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request</p>
+## Background and Methodology
+- Which embedded systems concepts did you apply?
+- How did you achieve your project goals?
 
+## Functional Block Diagram
+![Functional Block Diagram](path/to/your/diagram.png)
 
-## Contact
+## Table of Components Used
 
+| Component       | Description           | Quantity |
+|-----------------|-----------------------|----------|
+| Component 1     | Description 1         | X        |
+| Component 2     | Description 2         | X        |
+| ...             | ...                   | ...      |
 
+## Table of Pinout Used
 
-<p>Project Link: 
+| Pin Number      | Function              | Description          |
+|-----------------|-----------------------|----------------------|
+| Pin 1           | Function 1            | Description 1        |
+| Pin 2           | Function 2            | Description 2        |
+| ...             | ...                   | ...                  |
