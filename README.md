@@ -6,7 +6,7 @@ The timer begins counting when the green LED turns on, after the red LED signals
 
 # Results 
 The project ran into a display issue where the timer reset at 999 rather than reaching the desired 5000. Following an examination of the timer and main code, 
-the seven-segment display driver code was found to be the source of the issue. 
+The seven-segment display driver code was found to be the source of the issue. 
 In particular, a for loop that iterates through count_value's digits needed to be modified. The timer was able to reach the full 5000 count without being prematurely 
 reset once all four digits were adjusted and shown appropriately.
 
@@ -35,11 +35,11 @@ LED control is managed through PWM modules that adjust duty cycles to determine 
 programmed to manage both hardware interrupts from button interactions and software interrupts from timers. The entire gameplay flow follows state machine principles, transitioning systematically 
 from waiting state through reaction phase to final result presentation.
 
-# Functional Block Diagram
+# Block Diagram
 
 ![Block diagram](https://github.com/user-attachments/assets/98291f65-8d54-4de0-86a0-490a2112502c)
 
-# Table of Components Used
+# Components Used
 
 | Component       | Quantity           | Manufacturer              |
 |-----------------|-----------------------|-----------------------|
@@ -48,10 +48,17 @@ from waiting state through reaction phase to final result presentation.
 | PMOD BTN Module   | 1                   |Digilent Inc    |
 | LEDs              | 2                   | N/A      |
 
-# Table of Pinout Used
+# Pinout Used
 
-| Pin Number      | Function              | Description          |
-|-----------------|-----------------------|----------------------|
-| Pin 1           | Function 1            | Description 1        |
-| Pin 2           | Function 2            | Description 2        |
-| ...             | ...                   | ...                  |
+| PMOD BTN Pin     | TM4C123GH6PM           
+|-----------------|-----------------------
+| Pin 1 (BTN0)          | PD2           | 
+| Pin 2 (BTN1)          | PD3           | 
+| Pin 5 (GND)           | GND           |
+| Pin 6 (VCC)           | VCC (3.3V)    | 
+
+| PWM     | TM4C123GH6PM           
+|-----------------|-----------------------
+| Resistor          | PE4          | 
+| Resistor          | PE5          | 
+
