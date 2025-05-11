@@ -8,6 +8,7 @@ When the red LED indicates that the game has started, the green LED goes on, and
 Three testing techniques were utilized to measure reaction times in order to evaluate performance: the Tiva TM4C123G LaunchPad with EduBase board, 
 An online reaction game ([Human Benchmark - Reaction Time Test](https://humanbenchmark.com/tests/reactiontime)) was played with a wired mouse, and the same game was played with a wireless mouse. 
 The findings were displayed using MATLAB in order to investigate the differences in performance between these input methods.
+([video demonstration](https://youtu.be/zzkDvnV2Ua8))
 
 The Tiva TM4C123G LaunchPad outperformed other options by removing the several latency layers seen in online settings. Even while the cable mouse had a somewhat lower latency 
 than its wireless version, the microcontroller's hardware timers that didn't depend on CPU load made it the most precise. Because of its design, the microcontroller can attain 
