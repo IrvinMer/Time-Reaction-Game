@@ -1,18 +1,13 @@
 # Introduction
 For my Reaction Time Game project, I utilized the EduBase board and the TM4C123GH6PM microcontroller 
 with drivers that we created in lab class. I made use of the PWM example that was demonstrated in the lecture, the PMOD BTN driver, the Timer_0A driver, and the seven-segment display driver. 
-The count variable, which was shown on the seven-segment display, was incremented by me using the timer driver to cause interrupts every millisecond. Two LEDs were powered by the PWM driver. 
-The timer begins counting when the green LED turns on, after the red LED signals that the game has begun. To end the game as soon as possible, the player must now press the button.
+The count variable, the value displayed on the seven-segment display, was incremented by interrupts from the timer driver every millisecond. Two LEDs were powered by the PWM driver. 
+When the red LED indicates that the game has started, the green LED goes on, and the timer starts counting. The player now has to use the stop button to quickly stop the game.
 
 # Results 
-The project ran into a display issue where the timer reset at 999 rather than reaching the desired 5000. Following an examination of the timer and main code, 
-The seven-segment display driver code was found to be the source of the issue. 
-In particular, a for loop that iterates through count_value's digits needed to be modified. The timer was able to reach the full 5000 count without being prematurely 
-reset once all four digits were adjusted and shown appropriately.
-
-The Tiva TM4C123G LaunchPad with EduBase board, an online game played with a wired mouse, and the same game played with a wireless mouse 
-were the three testing methods used to evaluate reaction times in order to assess performance. 
-To examine the variations in performance between these input techniques, MATLAB was used to illustrate the results.
+Three testing techniques were utilized to measure reaction times in order to evaluate performance: the Tiva TM4C123G LaunchPad with EduBase board, 
+An online reaction game ([Human Benchmark - Reaction Time Test](https://humanbenchmark.com/tests/reactiontime)) was played with a wired mouse, and the same game was played with a wireless mouse. 
+The findings were displayed using MATLAB in order to investigate the differences in performance between these input methods.
 
 The Tiva TM4C123G LaunchPad outperformed other options by removing the several latency layers seen in online settings. Even while the cable mouse had a somewhat lower latency 
 than its wireless version, the microcontroller's hardware timers that didn't depend on CPU load made it the most precise. Because of its design, the microcontroller can attain 
