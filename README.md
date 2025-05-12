@@ -2,7 +2,7 @@
 For my Reaction Time Game project, I utilized the EduBase board and the TM4C123GH6PM microcontroller 
 with drivers that we created in lab class. I made use of the PWM example that was demonstrated in the lecture, the PMOD BTN driver, the Timer_0A driver, and the seven-segment display driver. 
 The count variable, the value displayed on the seven-segment display, was incremented by interrupts from the timer driver every millisecond. Two LEDs were powered by the PWM driver. 
-When the red LED indicates that the game has started, the green LED goes on, and the timer starts counting. The player now has to use the stop button to quickly stop the game.
+When the red LED turns on, the game has started, and when the green LED turns on, the timer starts counting. The player now has to use the stop button to quickly stop the game.
 
 # Results 
 Three testing techniques were utilized to measure reaction times in order to evaluate performance: the Tiva TM4C123G LaunchPad with EduBase board, 
